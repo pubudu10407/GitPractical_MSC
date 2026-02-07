@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Basics - Version Control Made Easy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Git Logo">
+                <h1>Git Basics</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#commands">Commands</a></li>
+                    <li><a href="#workflow">Workflow</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Master Git Version Control</h2>
+                <p>Learn essential Git commands and workflows for modern software development</p>
+                <button class="btn-primary" onclick="scrollToSection('commands')">Get Started</button>
+            </div>
+            <div class="hero-image">
+                <img src="img/img.png" alt="Git Workflow">
+            </div>
+        </div>
+    </section>
+
+    <section id="commands" class="commands">
+        <div class="container">
+            <h2>Essential Git Commands</h2>
+            <div class="command-grid">
+                <div class="command-card" data-command="init">
+                    <h3>git init</h3>
+                    <p>Initialize a new Git repository</p>
+                    <code>git init</code>
+                </div>
+                <div class="command-card" data-command="clone">
+                    <h3>git clone</h3>
+                    <p>Clone an existing repository</p>
+                    <code>git clone &lt;url&gt;</code>
+                </div>
+                <div class="command-card" data-command="add">
+                    <h3>git add</h3>
+                    <p>Stage files for commit</p>
+                    <code>git add &lt;file&gt;</code>
+                </div>
+                <div class="command-card" data-command="commit">
+                    <h3>git commit</h3>
+                    <p>Commit staged changes</p>
+                    <code>git commit -m "message"</code>
+                </div>
+                <div class="command-card" data-command="push">
+                    <h3>git push</h3>
+                    <p>Upload commits to remote</p>
+                    <code>git push origin main</code>
+                </div>
+                <div class="command-card" data-command="pull">
+                    <h3>git pull</h3>
+                    <p>Download and merge changes</p>
+                    <code>git pull origin main</code>
+                </div>
+                <div class="command-card" data-command="branch">
+                    <h3>git branch</h3>
+                    <p>List, create, or delete branches</p>
+                    <code>git branch &lt;name&gt;</code>
+                </div>
+                <div class="command-card" data-command="merge">
+                    <h3>git merge</h3>
+                    <p>Merge branches together</p>
+                    <code>git merge &lt;branch&gt;</code>
+                </div>
+                <div class="command-card" data-command="status">
+                    <h3>git status</h3>
+                    <p>Check repository status</p>
+                    <code>git status</code>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="workflow" class="workflow">
+        <div class="container">
+            <h2>Git Workflow</h2>
+            <div class="workflow-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Create/Modify</h3>
+                    <p>Make changes to your files in the working directory</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Stage</h3>
+                    <p>Add files to the staging area using git add</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Commit</h3>
+                    <p>Save staged changes to repository history</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Push</h3>
+                    <p>Upload your commits to a remote repository</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Git</h2>
+            <div class="about-content">
+                <p>Git is a distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
+                <p>Created by Linus Torvalds in 2005, Git has become the most widely used version control system in the world.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3 id="repos-count">0</h3>
+                        <p>Million+ Repositories</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 id="developers-count">0</h3>
+                        <p>Million+ Developers</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 id="commits-count">0</h3>
+                        <p>Billion+ Commits</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Git Basics. Learn Git - Version Control Made Easy</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
